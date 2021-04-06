@@ -2,13 +2,16 @@ from kivy.app import App
 from kivy.uix.button import Button
 
 
+class FunkyButton(Button):
+    pass
+
+
 class LanguageLearnerApp(App):
     def build(self):
-        return Button(
-            text='Hello World',
-            pos=(50, 50),
-            size=(100, 100),
-            size_hint=(None,None)
+        return FunkyButton(
+            text="Funky button",
+            pos=(100, 100),
+            size_hint=(.5, .5)
         )
 
 
