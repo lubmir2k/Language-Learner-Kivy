@@ -1,18 +1,15 @@
 from kivy.app import App
 from kivy.uix.button import Button
+from kivy.uix.widget import Widget
 
 
-class FunkyButton(Button):
+class GameScreen(Widget):
     pass
 
 
 class LanguageLearnerApp(App):
     def build(self):
-        return FunkyButton(
-            pos=(100, 100),
-            size_hint=(None, None),
-            size=(500, 500)
-        )
+        return GameScreen();
 
 
 if __name__ == '__main__':
